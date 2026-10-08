@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Authentication | Login</title></head>
+<body>
+  <h1>Log in</h1>
+  <% if (error) { %><p role="alert">Invalid username or password. Please try again.</p><% } %>
+  <form action="/login" method="post">
+    <p><label for="username">Username:</label> <input id="username" name="username" autocomplete="username" required></p>
+    <p><label for="password">Password:</label> <input id="password" type="password" name="password" autocomplete="current-password" required></p>
+    <button type="submit">Log in</button>
+  </form>
+  <p><a href="/">Welcome page</a></p>
+</body>
+</html>

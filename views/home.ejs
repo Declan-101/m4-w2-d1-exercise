@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Authentication | Home</title></head>
+<body>
+  <h1>Authentication Demo</h1>
+  <% if (!user) { %>
+    <p>Welcome! Please <a href="/login">log in</a>.</p>
+  <% } else { %>
+    <p>Welcome, <%= user.displayName %>! <a href="/logout">Log out</a>.</p>
+  <% } %>
+  <p><a href="/home">Home (requires authentication)</a></p>
+</body>
+</html>
